@@ -1,0 +1,79 @@
+name: 🐛 Bug Report
+description: Report a reproducible bug or unexpected behavior
+title: '[Bug] '
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 👋 Thanks for reporting a bug!
+        Please fill out the form below so we can reproduce and fix the issue quickly.
+        🔔 **@maze-technology/release-engineers** has been notified.
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, language version, etc.
+      placeholder: e.g. macOS 14.2, Node.js 20, Firefox 123
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what happened…
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a step-by-step guide to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, Errors, or Screenshots
+      description: Paste error logs, stack traces, or screenshots that help illustrate the problem.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How critical is the bug?
+      options:
+        - 🟢 Minor – doesn't impact usage
+        - 🟡 Moderate – annoying but workaround exists
+        - 🔴 Critical – breaks core functionality
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Anything else that might help us understand or debug the issue.
+    validations:
+      required: false
