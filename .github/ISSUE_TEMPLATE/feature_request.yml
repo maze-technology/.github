@@ -9,7 +9,7 @@ body:
       value: |
         ## ✨ Feature Request
         Help us improve the project by submitting a feature request.
-        🔔 **@maze-technology/project-managers** has been notified.
+        🔔 **@maze-technology/project-managers** will be notified.
 
   - type: textarea
     id: description

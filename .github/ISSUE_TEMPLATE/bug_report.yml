@@ -9,7 +9,7 @@ body:
       value: |
         ## 👋 Thanks for reporting a bug!
         Please fill out the form below so we can reproduce and fix the issue quickly.
-        🔔 **@maze-technology/release-engineers** has been notified.
+        🔔 **@maze-technology/release-engineers** will be notified.
 
   - type: input
     id: environment
